@@ -1,6 +1,6 @@
 <div class="message-input">
-  <%= form_for(@message) do |f| %>
-    <%= f.text_area :content %>
-    <%= f.submit "Send" %>
-  <% end %>
+  <form class="new_message" id="new_message" action="/messages" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="7H029dlvyUHTd1htArGOqWGl2eSC0qcwsjTHqZd93fq4iSkzVhqtCK60q16RMVLwRFTvJFlWQkX5y87BRZqh8g==">
+    <textarea name="message[content]" id="message_content"></textarea>
+    <input type="submit" name="commit" value="Send" data-disable-with="Send">
+  </form>
 </div>
